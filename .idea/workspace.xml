@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77c02ef0-6dc5-4470-94d3-3bd03bf98014" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegNet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prostate_segmentation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prostatex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/example_simpleUnet.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/example_simpleUnet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/image_analysis/check_train_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/image_analysis/check_train_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/image_analysis/compare_train_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/image_analysis/compare_train_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/image_analysis/dcm_med_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/image_analysis/dcm_med_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/image_analysis/get_patient_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/image_analysis/get_patient_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/simple_model_approach.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/simple_model_approach.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/target_analysis/target_analysis_with_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/target_analysis/target_analysis_with_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/target_analysis/target_analysis_with_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/target_analysis/target_analysis_with_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/target_analysis/test_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/target_analysis/test_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX/target_analysis/test_numpy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX_self/target_analysis/test_numpy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX2/prostatex_example" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX2/prostatex_example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX2/prostatex_example/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/RegNet" beforeDir="false" />
-    </list>
+    <list default="true" id="77c02ef0-6dc5-4470-94d3-3bd03bf98014" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,8 +33,8 @@
       <file leaf-file-name="compare_train_img.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProstateX_self/image_analysis/compare_train_img.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+            <state relative-caret-position="304">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#342#372#0" expanded="true" />
               </folding>
@@ -64,21 +42,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/README.md">
+        <entry file="file://$PROJECT_DIR$/ProstateX_self/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret selection-end-line="5" selection-end-column="67" />
+              <first_editor relative-caret-position="126">
+                <caret line="6" selection-start-line="6" selection-end-line="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -143,7 +112,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ProstateX2/prostatex_example" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -159,6 +128,8 @@
         <option value="$PROJECT_DIR$/ProstateX/image_analysis/check_train_img.py" />
         <option value="$PROJECT_DIR$/ProstateX/image_analysis/compare_train_img.py" />
         <option value="$PROJECT_DIR$/ProstateX2/prostatex_example/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ProstateX_self/README.md" />
       </list>
     </option>
   </component>
@@ -212,11 +183,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projectcode\MID\submodules" />
       <recent name="D:\projectcode\MID\ProstateX\image_analysis" />
       <recent name="D:\projectcode\MID\ProstateX\target_analysis" />
       <recent name="D:\projectcode\MID\ProstateX2" />
       <recent name="D:\projectcode\MID\ProstateX\example_1" />
-      <recent name="D:\projectcode\MID\ProstateX" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projectcode\MID\models" />
@@ -296,12 +267,12 @@
       <workItem from="1528459958674" duration="3453000" />
       <workItem from="1528785333497" duration="1840000" />
       <workItem from="1528793236021" duration="2106000" />
-      <workItem from="1528795531023" duration="266000" />
+      <workItem from="1528795531023" duration="1856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36936000" />
+    <option name="totallyTimeSpent" value="38526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
@@ -311,7 +282,7 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="6" sideWeight="0.5011719" side_tool="true" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5011719" side_tool="true" visible="true" weight="0.32941177" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
@@ -319,7 +290,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4988281" visible="true" weight="0.32941177" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13828126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13828126" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="SciView" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -663,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProstateX_self/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="6" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
@@ -721,24 +682,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProstateX_self/image_analysis/compare_train_img.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
-          <folding>
-            <element signature="e#342#372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/PyFunctions.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -747,6 +691,33 @@
         <state split_layout="SPLIT">
           <first_editor>
             <caret selection-end-line="5" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX_self/image_analysis/compare_train_img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#342#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX_self/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
           </first_editor>
           <second_editor />
         </state>
