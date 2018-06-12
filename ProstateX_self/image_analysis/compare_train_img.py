@@ -7,7 +7,7 @@ Here we are going to compare many different slices of the input data in order to
 With the help of an external program that helps to visualize the DICOM images
 """
 
-from ProstateX.config import *
+from ProstateX_self.config import *
 
 import pydicom
 import numpy as np

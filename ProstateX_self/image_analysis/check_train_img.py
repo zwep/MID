@@ -18,7 +18,7 @@ https://dicom.innolitics.com/ciods
 """
 
 # Load in necessary libraries
-from ProstateX.config import *
+from ProstateX_self.config import *
 from helper.misc import prep_splitcol
 
 import numpy as np

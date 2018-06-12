@@ -3,5 +3,8 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ProstateX2/prostatex_example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RegNet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prostate_segmentation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/prostatex" vcs="Git" />
   </component>
 </project>

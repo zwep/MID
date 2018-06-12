@@ -1,0 +1,9 @@
+[submodule "RegNet"]
+	path = RegNet
+	url = https://github.com/hsokooti/RegNet
+[submodule "prostate_segmentation"]
+	path = prostate_segmentation
+	url = https://github.com/mirzaevinom/prostate_segmentation
+[submodule "prostatex"]
+	path = prostatex
+	url = https://github.com/jspunda/prostatex.git
