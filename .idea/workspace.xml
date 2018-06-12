@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProstateX2/prostatex_example" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX2/prostatex_example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProstateX2/prostatex_example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,14 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compare_train_img.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="compare_train_img.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/compare_train_img.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="136">
+              <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
               <folding>
                 <element signature="e#342#372#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -150,33 +161,25 @@
             <path>
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ISBI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ProstateX" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="RegNet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MID" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="RegNet" type="462c0819:PsiDirectoryNode" />
+              <item name="RegNet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
               <item name="ProstateX2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ProstateX2" type="462c0819:PsiDirectoryNode" />
-              <item name="prostatex_example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,6 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models/RegNet/RegNet" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -196,6 +200,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projectcode\MID\models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projectcode\MID\ProstateX\image_analysis" />
       <recent name="D:\projectcode\MID\ProstateX\target_analysis" />
@@ -277,15 +284,16 @@
       <workItem from="1528438977072" duration="13475000" />
       <workItem from="1528459958674" duration="3453000" />
       <workItem from="1528785333497" duration="1840000" />
-      <workItem from="1528793236021" duration="110000" />
+      <workItem from="1528793236021" duration="761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34674000" />
+    <option name="totallyTimeSpent" value="35325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -656,11 +664,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/compare_train_img.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="136">
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
           <folding>
             <element signature="e#342#372#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PyFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
