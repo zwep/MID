@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77c02ef0-6dc5-4470-94d3-3bd03bf98014" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_augmentation/DVF.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_unet.py" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,26 +17,26 @@
       <file leaf-file-name="check_train_img.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/check_train_img.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="20" column="30" selection-start-line="20" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProstateX/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state relative-caret-position="525">
+              <caret line="25" selection-start-line="14" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example_simpleUnet.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="example_simpleUnet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProstateX/example_simpleUnet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
               <folding>
                 <element signature="e#301#310#0" expanded="true" />
               </folding>
@@ -50,8 +47,8 @@
       <file leaf-file-name="compare_train_img.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/compare_train_img.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="987">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#342#372#0" expanded="true" />
               </folding>
@@ -62,18 +59,13 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/submodules/prostate_segmentation/codes/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="420">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="best_predictions.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/submodules/prostate_segmentation/images/best_predictions.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="dcm_med_img.py" pinned="false" current-in-tab="false">
@@ -91,8 +83,8 @@
       <file leaf-file-name="NCIISBI_challenge.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ISBI/NCIISBI_challenge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="420">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -101,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/submodules/prostate_segmentation/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="273">
-                <caret line="8" column="235" lean-forward="true" selection-start-line="8" selection-start-column="235" selection-end-line="8" selection-end-column="235" />
+              <first_editor relative-caret-position="168">
+                <caret line="8" column="235" selection-start-line="8" selection-start-column="235" selection-end-line="8" selection-end-column="235" />
               </first_editor>
               <second_editor />
             </state>
@@ -113,8 +105,8 @@
         <entry file="file://$PROJECT_DIR$/ProstateX/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="147">
-                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <first_editor relative-caret-position="105">
+                <caret line="5" selection-start-line="5" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -195,8 +187,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,42 +200,17 @@
             <path>
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ISBI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
               <item name="ProstateX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ProstateX" type="462c0819:PsiDirectoryNode" />
-              <item name="image_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="submodules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="submodules" type="462c0819:PsiDirectoryNode" />
-              <item name="prostate_segmentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="submodules" type="462c0819:PsiDirectoryNode" />
-              <item name="prostate_segmentation" type="462c0819:PsiDirectoryNode" />
-              <item name="codes" type="462c0819:PsiDirectoryNode" />
+              <item name="ProstateX2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,16 +310,17 @@
       <workItem from="1528459958674" duration="3453000" />
       <workItem from="1528785333497" duration="1840000" />
       <workItem from="1528793236021" duration="2106000" />
-      <workItem from="1528795531023" duration="9012000" />
+      <workItem from="1528795531023" duration="9168000" />
+      <workItem from="1529315784809" duration="710000" />
+      <workItem from="1529321396711" duration="1209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45682000" />
+    <option name="totallyTimeSpent" value="47757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -363,10 +332,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Run" order="10" weight="0.6375" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4988281" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4988281" visible="true" weight="0.32941177" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13828126" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13828126" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="SciView" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -401,6 +370,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ProstateX/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX/example_simpleUnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding>
+            <element signature="e#301#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/check_train_img.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -429,9 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#70#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#70#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,13 +489,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3633">
-          <caret line="178" column="35" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py" />
     <entry file="file://$PROJECT_DIR$/ProstateX/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -642,13 +619,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="178" column="35" selection-start-line="178" selection-start-column="21" selection-end-line="178" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/data_visualization/adc_lesion_values.py" />
     <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/get_patient_info.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-403">
@@ -657,16 +628,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/PyFunctions.py" />
-    <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="5" selection-end-column="67" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX2/prostatex_example/README.md" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -674,16 +636,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitmodules">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/helper/misc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#70#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,8 +653,8 @@
     <entry file="file://$PROJECT_DIR$/ProstateX/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="147">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <first_editor relative-caret-position="105">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>
@@ -716,39 +672,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/compare_train_img.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="987">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#342#372#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_unet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_unet.py" />
     <entry file="file://$PROJECT_DIR$/submodules/prostate_segmentation/codes/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="420">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submodules/prostate_segmentation/images/best_predictions.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/submodules/prostate_segmentation/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="273">
-            <caret line="8" column="235" lean-forward="true" selection-start-line="8" selection-start-column="235" selection-end-line="8" selection-end-column="235" />
+          <first_editor relative-caret-position="168">
+            <caret line="8" column="235" selection-start-line="8" selection-start-column="235" selection-end-line="8" selection-end-column="235" />
           </first_editor>
           <second_editor />
         </state>
@@ -756,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ISBI/NCIISBI_challenge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="420">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -773,25 +720,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX/image_analysis/check_train_img.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProstateX/example_simpleUnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <element signature="e#301#310#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="20" column="30" selection-start-line="20" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        <state relative-caret-position="525">
+          <caret line="25" selection-start-line="14" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProstateX/example_simpleUnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding>
+            <element signature="e#301#310#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
