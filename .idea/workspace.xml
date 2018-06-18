@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77c02ef0-6dc5-4470-94d3-3bd03bf98014" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="77c02ef0-6dc5-4470-94d3-3bd03bf98014" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -176,10 +174,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1698" />
-    <option name="height" value="1020" />
+    <option name="x" value="1280" />
+    <option name="width" value="1280" />
+    <option name="height" value="1392" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -196,16 +193,6 @@
             <path>
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ProstateX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MID" type="462c0819:PsiDirectoryNode" />
-              <item name="ProstateX2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,12 +299,12 @@
       <workItem from="1528793236021" duration="2106000" />
       <workItem from="1528795531023" duration="9168000" />
       <workItem from="1529315784809" duration="710000" />
-      <workItem from="1529321396711" duration="1209000" />
+      <workItem from="1529321396711" duration="1880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47757000" />
+    <option name="totallyTimeSpent" value="48428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
@@ -332,10 +319,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Run" order="10" weight="0.6375" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4988281" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4988281" visible="true" weight="0.32941177" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13828126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13828126" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="SciView" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
