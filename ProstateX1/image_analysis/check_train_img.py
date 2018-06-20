@@ -18,7 +18,7 @@ https://dicom.innolitics.com/ciods
 """
 
 # Load in necessary libraries
-from ProstateX1.config import *
+from settings.config import *
 from helper.misc import prep_splitcol
 
 import numpy as np
@@ -39,15 +39,14 @@ pos_cols = ['pos_x', 'pos_y', 'pos_z']
 ijk_cols = ['i', 'j', 'k']
 
 # Load target data
-pd_dat_train = pd.read_csv(os.path.join(dir_xls, file_name_fid_train))
+pd_dat_train = pd.read_csv(os.path.join(DIR_XLS, FIND_CSV))
 pd_dat_train = prep_splitcol(pd_dat_train, pos_cols, 'pos')
 
 # Load info about the images
-pd_dat_img = pd.read_csv(os.path.join(dir_xls, file_name_img_train))
+pd_dat_img = pd.read_csv(os.path.join(DIR_XLS, IMG_CSV))
 pd_dat_img_ind = pd_dat_img.set_index(['ProxID', 'Name'])
 # List of images that can be used to validate
-list_valid_img = glob.glob(dir_valid + '\*.bmp')
-
+list_valid_img = glob.glob(DIR_SS+ '\*.bmp')
 
 pd_img_info = []
 col_names = ['PatientID', 'SeriesName', 'MySerNum', 'i_x', 'i_y', 'n_x', 'n_y']
@@ -63,7 +62,7 @@ for i, i_row in pd_dat_img.iterrows():
     print(id, i_row['Name'])
 
     # Recursively find all the images belonging to this patient and the mentioned DCM Series Description.
-    i_path = os.path.join(dir_img, id) + '\*\*\*'
+    i_path = os.path.join(DIR_IMG, id) + '\*\*\*'
     i_id_files = glob.glob(i_path, recursive=True)
     file_dir_dcm = [x for x in i_id_files if i_folder in x]
 
@@ -141,13 +140,13 @@ for i, i_row in pd_dat_img.iterrows():
 A = pd.DataFrame(pd_img_info)
 
 file_name = 'loc_of_real_img.csv'
-if os.path.isfile(os.path.join(dir_mid, file_name)):
+if os.path.isfile(os.path.join(DIR_MID, file_name)):
     print('filename is already present')
     print('Overwite?')
     bool_ovwrt = input()
     if 'y' in bool_ovwrt:
         print('overwite. ok.')
-        A.to_csv(os.path.join(dir_mid, file_name), index=False)
+        A.to_csv(os.path.join(DIR_MID, file_name), index=False)
     else:
         if re.search('\([0-9]\)\.', file_name):
             x = int(re.findall('\(([0-9])\)\.', file_name)[0])
@@ -156,12 +155,12 @@ if os.path.isfile(os.path.join(dir_mid, file_name)):
         else:
             file_name_new = re.sub('\.', '(1).', file_name)
         print('new filename: ', file_name_new)
-        A.to_csv(os.path.join(dir_mid, file_name_new), index=False)
+        A.to_csv(os.path.join(DIR_MID, file_name_new), index=False)
 
 
 
 # Example of recovery
-A = pd.read_csv(os.path.join(dir_mid, 'loc_of_real_img.csv'))
+A = pd.read_csv(os.path.join(DIR_MID, 'loc_of_real_img.csv'))
 A.columns = ['index', 'PatientID', 'SeriesName', 'MySerNum', 'i_xy', 'n_xy']
 
 # This works.. a bit.. not amazing though...
@@ -182,13 +181,13 @@ for i, i_row in A.iterrows():
         img_csv_nr = np.array(img_csv_nr)[0]
 
         # loop through all the image of i_id
-        for x in os.walk(os.path.join(dir_mid, r'PROSTATEx\\' + i_id)):
+        for x in os.walk(os.path.join(DIR_MID, r'PROSTATEx\\' + i_id)):
             if i_name in x[0]:
                 i_files = os.path.join(x[0], x[2][i_nr])
                 csv_files = os.path.join(x[0], x[2][img_csv_nr])
 
         # Get the actual image with which we have compared stuff
-        list_valid_img = glob.glob(dir_valid + '\*.bmp')
+        list_valid_img = glob.glob(DIR_SS + '\*.bmp')
         res_check = [x for x in list_valid_img if (i_id in x) and (i_name0 in x)]
 
         if len(res_check) == 1:

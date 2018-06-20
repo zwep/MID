@@ -12,21 +12,18 @@ C:\Users\C35612\data\mid\simple_unet_weights.h5
 https://dicom.innolitics.com/ciods
 """
 
-import os
 import numpy as np
 import pydicom
 
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 import skimage.transform
-from submodules.prostate_segmentation.codes.models import simple_unet, actual_unet
+from submodules.prostate_segmentation.codes.models import simple_unet
 from skimage.exposure import equalize_hist
 
-from ProstateX1.config import *
+from settings.config import *
 
 from PIL import Image
-import cv2
 from keras import backend as K
 
 
