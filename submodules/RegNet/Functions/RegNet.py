@@ -27,7 +27,10 @@ def searchIndices(DVFList1, c, classBalanced, K, Dim):
     if c == 0:
         # Future: you can add a mask here to prevent selecting pixels twice!
         I1 = np.ravel_multi_index(np.where((np.all((np.abs(DVFList1) < classBalanced[c]), axis=3)) &
-                                           (np.all((gridDVF > K), axis=3)) & (np.all((gridDVF < [np.array(np.shape(DVFList1)[:-1]) - K]), axis=3))), np.shape(DVFList1)[:-1]).astype(np.int32)
+                                           (np.all((gridDVF > K), axis=3)) &
+                                           (np.all((gridDVF < [np.array(np.shape(DVFList1)[:-1]) - K]), axis=3))),
+                                  np.shape(DVFList1)[:-1]).astype(np.int32)
+
         # the output of np.where occupy huge part of memory! by converting it to a numpy array lots of memory can be saved!
     if (c > 0) & (c < len(classBalanced)):
         if Dim == '2D':
@@ -41,6 +44,7 @@ def searchIndices(DVFList1, c, classBalanced, K, Dim):
     #     I1 = np.ravel_multi_index(np.where((np.any((np.abs(DVFList1) >= classBalanced[c - 1]), axis=3)) &
     #                                        (np.all((gridDVF > K), axis=3)) & (np.all((gridDVF < [np.array(np.shape(DVFList1)[:-1]) - K]), axis=3))), np.shape(DVFList1)[:-1]).astype(np.int32)
     return I1
+
 
 class Patches(object):
     def __init__(self,               

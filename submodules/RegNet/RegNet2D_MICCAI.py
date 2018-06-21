@@ -3,9 +3,9 @@ import os, time , datetime, sys
 import tensorflow as tf
 import shutil
 import matplotlib.pyplot as plt
-import Functions.RegNet as RegNet
-import Functions.RegNetThread as RegNetThread
-import Functions.PyFunctions as PF
+import submodules.RegNet.Functions.RegNet as RegNet
+import submodules.RegNet.Functions.RegNetThread as RegNetThread
+import submodules.RegNet.Functions.PyFunctions as PF
 
 # %%-------------------------------------------h.sokooti@gmail.com--------------------------------------------
 
