@@ -114,7 +114,7 @@ class Patches(object):
                                      )
             self._FixedImList[i], self._DeformedImList[i], self._DVFList[i] = SyntheticDVF.GetDVFandDeformedImages()
             if self._setting['verbose']:
-                print ('RegNet2: Image type = {1:} IN = {1:} is loaded'.format(ImageTypeTotal[pair], INTotal[pair] ))
+                print ('RegNet: Image type = {1:} IN = {1:} is loaded'.format(ImageTypeTotal[pair], INTotal[pair] ))
         K=self._setting['K']
         classBalanced = self._setting['classBalanced']
         indices={} ; 
@@ -139,7 +139,7 @@ class Patches(object):
             del results
             end_time = time.time();
             if self._setting['verbose']:
-                print('RegNet2: Parallel searching for {} classes is Done in {:.2f}s'.format(len(classBalanced), end_time - start_time))
+                print('RegNet: Parallel searching for {} classes is Done in {:.2f}s'.format(len(classBalanced), end_time - start_time))
         else:
             for i in range (0,len(self._FixedImList)) :
                 gridDVF = np.transpose(np.indices(np.shape(self._DVFList[i])[:-1]),(1,2,3,0))
@@ -186,7 +186,7 @@ class Patches(object):
             else:
                 I = np.concatenate ((I ,  np.concatenate(( indices['class'+str(c)][I1,:] , c * np.ones([len(I1),1], dtype = np.int32)),axis = 1) ), axis =0 )
         if self._setting['verbose']:
-            print( 'RegNet2: samplesPerChunk is {} for semiEpoch = {}, Chunk = {} '.format(sum(numberSamplesClass), self._semiEpoch , self._chunk) )
+            print( 'RegNet: samplesPerChunk is {} for semiEpoch = {}, Chunk = {} '.format(sum(numberSamplesClass), self._semiEpoch , self._chunk) )
         shuffleIndex= np.arange(0, len(I))
         np.random.shuffle(shuffleIndex)
         self._Ish = I[shuffleIndex]  # Ish : Shuffled Index
@@ -203,7 +203,7 @@ class Patches(object):
             #     self._semiEpochs_completed = 1
             # self._batchCounter = 0
             # self._chunks_completed = 0
-        print('RegNet2: NextChunk, is_training = {} semiEpoch = {}, Chunk = {}, batchCounter = {} , endBatch = {} '.format(self._training, self._semiEpoch, self._chunk, self._batchCounter, endBatch))
+        print('RegNet: NextChunk, is_training = {} semiEpoch = {}, Chunk = {}, batchCounter = {} , endBatch = {} '.format(self._training, self._semiEpoch, self._chunk, self._batchCounter, endBatch))
 
 
     def next_batch(self,batchSize):

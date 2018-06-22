@@ -10,7 +10,7 @@ import Functions.PyFunctions as PF
 # %%-------------------------------------------h.sokooti@gmail.com--------------------------------------------
 
 myDate = current_time = datetime.datetime.now()
-LOGDIR = '/home/hsokooti/DL/RegNet2/TB/2DB/'
+LOGDIR = '/home/hsokooti/DL/RegNet/TB/2DB/'
 Exp='MICCAI3D_{:04d}{:02d}{:02d}_{:02d}{:02d}'.format(myDate.year, myDate.month, myDate.day, myDate.hour, myDate.minute, myDate.second)
 
 # saving the current script
