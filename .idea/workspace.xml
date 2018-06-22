@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77c02ef0-6dc5-4470-94d3-3bd03bf98014" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/models/RegNet2" beforeDir="false" afterPath="$PROJECT_DIR$/models/RegNet2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/differentname" beforeDir="false" afterPath="$PROJECT_DIR$/models/differentname" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="misc.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="misc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper/misc.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -24,6 +24,41 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegNet2D_MICCAI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submodules/RegNet/RegNet2D_MICCAI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegNet3D_MICCAI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submodules/RegNet/RegNet3D_MICCAI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegNet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submodules/RegNet/Functions/RegNet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="202" column="22" lean-forward="true" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model_run.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/own_regnet/model_run.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -62,11 +97,11 @@
       <find>Sample</find>
       <find>Dsmooth</find>
       <find>D</find>
-      <find>D</find>
       <find>blob()</find>
       <find>blob</find>
       <find>_DeformedDVF_a`</find>
       <find>sigma</find>
+      <find>Regnet2</find>
     </findStrings>
     <replaceStrings>
       <replace>dir_xls</replace>
@@ -81,6 +116,7 @@
       <replace>dvf_b</replace>
       <replace>zyx</replace>
       <replace>zyx_A_max</replace>
+      <replace>RegNet</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -108,12 +144,13 @@
         <option value="$PROJECT_DIR$/ProstateX1/image_analysis/check_train_img.py" />
         <option value="$PROJECT_DIR$/settings/config.py" />
         <option value="$PROJECT_DIR$/models/syntheticdeformation.py" />
-        <option value="$PROJECT_DIR$/submodules/RegNet/Functions/RegNet.py" />
-        <option value="$PROJECT_DIR$/submodules/RegNet/RegNet2D_MICCAI.py" />
         <option value="$PROJECT_DIR$/models/RegNet/synt_deform_run.py" />
         <option value="$PROJECT_DIR$/models/RegNet/RegNet2D.py" />
         <option value="$PROJECT_DIR$/models/RegNet/model_run.py" />
         <option value="$PROJECT_DIR$/models/RegNet/synt_deform.py" />
+        <option value="$PROJECT_DIR$/submodules/RegNet/RegNet2D_MICCAI.py" />
+        <option value="$PROJECT_DIR$/submodules/RegNet/RegNet3D_MICCAI.py" />
+        <option value="$PROJECT_DIR$/submodules/RegNet/Functions/RegNet.py" />
       </list>
     </option>
   </component>
@@ -153,7 +190,25 @@
               <item name="MID" type="b2602c69:ProjectViewProjectNode" />
               <item name="MID" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="RegNet2" type="462c0819:PsiDirectoryNode" />
+              <item name="differentname" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MID" type="462c0819:PsiDirectoryNode" />
+              <item name="submodules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MID" type="462c0819:PsiDirectoryNode" />
+              <item name="submodules" type="462c0819:PsiDirectoryNode" />
+              <item name="RegNet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MID" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MID" type="462c0819:PsiDirectoryNode" />
+              <item name="submodules" type="462c0819:PsiDirectoryNode" />
+              <item name="RegNet" type="462c0819:PsiDirectoryNode" />
+              <item name="Functions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,12 +344,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13800539" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" auto_hide="true" id="Event Log" order="6" sideWeight="0.5015625" side_tool="true" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32991803" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991803" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="right" id="Python Console" order="11" weight="0.32991913" />
       <window_info anchor="right" id="Run" order="10" weight="0.44492188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4984375" weight="0.32889345" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4984375" visible="true" weight="0.32889345" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -365,23 +420,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ProstateX1/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProstateX1/example_simpleUnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX1/example_simpleUnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -625,7 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/RegNet2/model_run.py">
+    <entry file="file://$PROJECT_DIR$/models/differentname/model_run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
@@ -635,7 +673,7 @@
     <entry file="file://$PROJECT_DIR$/submodules/RegNet/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/RegNet2/synt_deform_run.py">
+    <entry file="file://$PROJECT_DIR$/models/differentname/synt_deform_run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
@@ -645,31 +683,17 @@
     <entry file="file://$PROJECT_DIR$/submodules/RegNet/Documentation/RegNet.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/RegNet2/RegNet2D.py">
+    <entry file="file://$PROJECT_DIR$/models/differentname/RegNet2D.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submodules/RegNet/Functions/RegNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="61" column="6" lean-forward="true" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/RegNet2/synt_deform.py">
+    <entry file="file://$PROJECT_DIR$/models/differentname/synt_deform.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
           <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/submodules/RegNet/RegNet2D_MICCAI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="140" column="51" lean-forward="true" selection-start-line="140" selection-start-column="51" selection-end-line="140" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -704,6 +728,33 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submodules/RegNet/RegNet2D_MICCAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submodules/RegNet/RegNet3D_MICCAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submodules/RegNet/Functions/RegNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="202" column="22" lean-forward="true" selection-start-line="202" selection-start-column="22" selection-end-line="202" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/own_regnet/model_run.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
