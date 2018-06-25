@@ -38,3 +38,5 @@ DIR_KTRANS = os.path.join(DIR_MID, r'PROSTATEx_{0}\ProstateXKtrans-{1}-fixed'.fo
 FIND_CSV = 'ProstateX-Findings-{0}.csv'.format(ID0)
 KTRANS_CSV = 'ProstateX-Images-KTrans-{0}.csv'.format(ID0)
 IMG_CSV = 'ProstateX-Images-{0}.csv'.format(ID0)
+
+DIR_CIFAR = r'C:\Users\C35612\data\cifar'
