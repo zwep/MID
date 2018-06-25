@@ -62,11 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elastic.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="elastic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_augmentation/elastic.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -99,18 +108,6 @@
               <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
               <folding>
                 <element signature="e#446#475#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegNet2D_MICCAI.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/submodules/RegNet/RegNet2D_MICCAI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3381">
-              <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,13 +147,13 @@
       <find>Sample</find>
       <find>Dsmooth</find>
       <find>D</find>
-      <find>D</find>
       <find>blob()</find>
       <find>blob</find>
       <find>sigma</find>
       <find>_DeformedDVF_a`</find>
       <find>Patches</find>
       <find>numberOfImagesPerChunk</find>
+      <find>deform</find>
     </findStrings>
     <replaceStrings>
       <replace>dir_xls</replace>
@@ -385,15 +382,16 @@
       <workItem from="1529396200100" duration="1041000" />
       <workItem from="1529492510794" duration="15271000" />
       <workItem from="1529569831196" duration="13704000" />
-      <workItem from="1529913655128" duration="1746000" />
+      <workItem from="1529913655128" duration="1794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81768000" />
+    <option name="totallyTimeSpent" value="81816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -473,16 +471,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/submodules/RegNet/Functions/RegNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2919">
-          <caret line="146" column="30" lean-forward="true" selection-start-line="146" selection-start-column="30" selection-end-line="146" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProstateX1/image_analysis/dcm_med_img.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -827,6 +815,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
         </state>
       </provider>
     </entry>
