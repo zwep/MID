@@ -5,7 +5,7 @@ Here we run the deformaiton algorithm...
 """
 
 import os
-
+from settings.config import *
 
 idx = 'ProstateX-0169'
 i_path = os.path.join(DIR_IMG, idx)
