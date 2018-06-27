@@ -11,11 +11,16 @@ import submodules.RegNet.Functions.PyFunctions as PF
 
 from settings.config import *
 
+
 def create_dvf(input_shape, dim, border, max_deform, n_p):
     """
     Here we create a random deformation field... based on the shape and input parameters
 
     :param input_shape:
+    :param dim:
+    :param border:
+    :param max_deform:
+    :param n_p:
     :return:
     """
 
@@ -32,7 +37,7 @@ def create_dvf(input_shape, dim, border, max_deform, n_p):
     index_edge = np.where((border_mask > 0) )
 
     # Dont understand this critera yet...
-    while ((len(index_edge[0]) > 4) & (i < n_p)):
+    while (len(index_edge[0]) > 4) & (i < n_p):
         selectVoxel = int(np.random.randint(0, len(index_edge[0]) - 1, 1, dtype=np.int64))
 
         # I dont understnad why this is reversed...
@@ -52,10 +57,13 @@ def create_dvf(input_shape, dim, border, max_deform, n_p):
 
     return dvf
 
+
 def distort_dvf(input_dvf, sigma_b):
     """
-    Here we modify the DVF by... applying a Gaussian filter and a normalization
-    :param input_dvf:
+    Here we modify the DVF by... applying a Gaussian filter and a normalization step
+
+    :param input_dvf: input distortion field
+    :param sigma_b: sigma parameter of gaussian filter
     :return:
     """
 
@@ -63,20 +71,28 @@ def distort_dvf(input_dvf, sigma_b):
     index_p = [np.where(x > 0) for x in dvf_b]
     index_n = [np.where(x < 0) for x in dvf_b]
 
-
     # In the following code, we linearly normalize the DVF for negative and positive values.
     # Please note that if normalization is done for all values, then a shift can occur which leads
     # too many nonzero values
-
     for xb, i_p, i_n in zip(dvf_b, index_p, index_n):
         xb[i_p] = ((np.max(xb) - 0) / (np.max(xb[i_p]) - np.min(xb[i_p])) * (xb[i_p] - np.min(xb[i_p])) + 0)
         xb[i_n] = ((0 - np.min(xb[i_n])) / (0 - np.min(xb[i_n])) * (xb[i_n] - np.min(xb[i_n])) + np.min(xb[i_n]))
 
     return dvf_b
 
-def create_dva(self):
 
-    # CREATE THE DVA
+def create_dvf_area(input_shape, dim, border, max_deform, n_p, distance_deform):
+    """
+
+    :param input_shape: the shape.. (x, y)
+    :param dim: dimension of the image (2D or 3D)
+    :param border: border of the image
+    :param max_deform: max deform region
+    :param n_p: amount of pixels that we are going to move
+    :param distance_deform:
+    :return:
+    """
+
     border_mask = np.zeros(input_shape)
     if dim == 2:
         border_mask[border:input_shape[0]-border+1,border:input_shape[1]-border+1] = 1
@@ -84,12 +100,11 @@ def create_dva(self):
         border_mask[border:input_shape[0]-border+1,border:input_shape[1]-border+1,border:input_shape[2]-border+1] = 1
 
     # Declare deformation field for three dimensions...
-    dva = np.zeros(input_shape)
+    dvf = [np.zeros(input_shape, dtype=np.float64) for x in range(3)]
     i = 0
     index_edge = np.where((border_mask > 0) )
 
-    # Dont understand this critera yet...
-    while ((len(index_edge[0]) > 4) & (i < n_p)):
+    while (len(index_edge[0]) > 4) & (i < n_p):
         selectVoxel = int(np.random.randint(0, len(index_edge[0]) - 1, 1, dtype=np.int64))
 
         # I dont understnad why this is reversed...
@@ -98,48 +113,35 @@ def create_dva(self):
         x = index_edge[2][selectVoxel]
         zyx = [z, y, z]
 
-        zyx_d_min = [max(i - DistanceDeform, 0) for i in zyx]
-        zyx_d_max = [min(i + DistanceDeform, input_shape[i] - 1) for i, x in enumerate(zyx)]
+        # Generate deformation parameters
+        # Could add an if-statement to set the z-axis
+        d_deform = [((np.random.ranf([1]))[0] - 0.5) * max_deform * 2 for x in range(3)]
 
-        zyx_A_min = [max(i - DistanceArea, 0) for i in zyx]
-        zyx_A_max = [min(i + DistanceArea, input_shape[i] - 1) for i, x in enumerate(zyx)]
+        # Insert the deformation parameters
+        for i_x, i_deform in zip(dvf, d_deform):
+            i_x[z, y, x] = i_deform
 
-        # Okay so he makes an exception here for a 2D case... remember this for later..
-        # if (Dim == '2D'):
-        #     zminA = z - DistanceArea
-        #     zmaxA = z + DistanceArea
-        # else:
-        #     zminA = z - 1
-        #     zmaxA = z + 2  # This is exclusively for 2D !!!!
+        zyx_d_min = [max(i - distance_deform, 0) for i in zyx]
+        zyx_d_max = [min(i + distance_deform, input_shape[i] - 1) for i, x in enumerate(zyx)]
 
+        # Here we update the border_mask and index_edge in the while loop itself.
         border_mask[zyx_d_min[0]:zyx_d_max[0], zyx_d_min[1]:zyx_d_max[1], zyx_d_min[2]:zyx_d_max[2]] = 0
-        dva[zyx_A_min[0]:zyx_A_max[0], zyx_A_min[1]:zyx_A_max[1], zyx_A_min[2]:zyx_A_max[2]] = 1
         index_edge = np.where(border_mask > 0)
         i += 1
 
-    return dva
+    return dvf
 
-def deform_image(input_path):
+
+def deform_image(input_path, dim=2, border=33, max_deform=40, n_p=100, sigma_b=35, id_dvf_area=False, distance_deform=None):
     """
     Here we can deform an image... which is being read.. deformed.. and written again...
 
     But I dont understand how the Area is used at this moment...
     :return:
     """
-    max_deform = 0.5
-    n_p = 100
-    sigma_b = 3
-    sigma_n = 2  # no idea...
-    border = 10
-    dim = 2
-
-    # File operational stuff...
-    file_dvf = os.path.join(os.path.dirname(input_path), 'DVF' + idx + '.mha')
-    file_mvd = os.path.join(os.path.dirname(input_path), 'MVD' + idx + '.mha')
-
+    # Read the image
     input_image = sitk.ReadImage(input_path)
-    temp_orig = input_image.GetOrigin()
-
+    # Get the values..
     temp_value = sitk.GetArrayFromImage(input_image)
     temp_value = temp_value[0, :, :]
 
@@ -148,8 +150,32 @@ def deform_image(input_path):
     temp_shape = temp_value.shape
 
     # Here we create a DVF and DVFb....
-    dvf = create_dvf(temp_shape, dim, border, max_deform, n_p)
+    if id_dvf_area:
+        dvf = create_dvf_area(temp_shape, dim, border, max_deform, n_p, distance_deform)
+    else:
+        dvf = create_dvf(temp_shape, dim, border, max_deform, n_p)
+
     dvfb = distort_dvf(dvf, sigma_b)
+
+    return dvfb
+
+
+def write_images(input_path, dvfb, sigma_n=5):
+    """
+    We create a separate function to handle all the writing...
+
+    :return:
+    """
+    input_image = sitk.ReadImage(input_path)
+
+    idx = re.findall('(ProstateX-[0-9]{4})', input_path)[0]
+    id_seriex = re.findall('([0-9]{6})\.dcm', input_path)[0]
+
+    # File operational stuff...
+    file_dvf = os.path.join(os.path.dirname(input_path), 'DVF' + id_seriex + '.dcm')
+    file_mvd = os.path.join(os.path.dirname(input_path), 'MVD' + id_seriex + '.dcm')
+
+    temp_orig = input_image.GetOrigin()
 
     sitk_dvfb = sitk.GetImageFromArray(dvfb, isVector=True)
     # Not sure what this exactly does
@@ -159,22 +185,13 @@ def deform_image(input_path):
     sitk.WriteImage(sitk.Cast(sitk_dvfb, sitk.sitkVectorFloat32), file_dvf)
 
     # ! After this line you cannot save DeformedDVF any more
-    dvf_t = sitk.DisplacementFieldTransform(sitk_dvfb)
+    dvf_t = sitk.DisplacementFieldTransform(np.array(sitk_dvfb))
+
+
 
     # This is the clean version of the deformed image. Intensity noise should be added to this image
     deformed_image = sitk.Resample(input_image, dvf_t)
     deformed_image = sitk.AdditiveGaussianNoise(deformed_image, sigma_n, 0, 0)
     deformed_image = sitk.GetArrayFromImage(deformed_image)
     sitk.WriteImage(sitk.Cast(deformed_image, sitk.sitkInt16), file_mvd)
-
-    # Here we create some Deformed Area... not sure what this hsould be...
-    if False:
-        dva = create_dva()
-        dvf = create_dvf(temp_shape, dim, border, max_deform, n_p)
-        dvfb = distort_dvf(dvf, sigma_b)
-        DeformedArea = sitk.GetImageFromArray(dva)
-        DeformedArea.SetOrigin(input_im.GetOrigin())
-        DeformedArea.SetSpacing(input_im.GetSpacing())
-        sitk.WriteImage(DeformedArea, 'somename.mha')
-    return 1
 
