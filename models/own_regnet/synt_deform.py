@@ -34,13 +34,13 @@ def create_dvf(input_shape, dim, border, max_deform, n_p):
     # Declare deformation field for three dimensions...
     dvf = [np.zeros(input_shape, dtype=np.float64) for x in range(3)]
     i = 0
-    index_edge = np.where((border_mask > 0) )
+    index_edge = np.where((border_mask > 0))
 
     # Dont understand this critera yet...
     while (len(index_edge[0]) > 4) & (i < n_p):
         selectVoxel = int(np.random.randint(0, len(index_edge[0]) - 1, 1, dtype=np.int64))
 
-        # I dont understnad why this is reversed...
+        # This is probably reversed because of sitk reversal...
         z = index_edge[0][selectVoxel]
         y = index_edge[1][selectVoxel]
         x = index_edge[2][selectVoxel]
@@ -100,6 +100,8 @@ def create_dvf_area(input_shape, dim, border, max_deform, n_p, distance_deform):
         border_mask[border:input_shape[0]-border+1,border:input_shape[1]-border+1,border:input_shape[2]-border+1] = 1
 
     # Declare deformation field for three dimensions...
+    # dvf = np.stack([np.zeros(input_shape, dtype=np.float64) for x in range(3)], axis=3)
+    # What to do what to do...
     dvf = [np.zeros(input_shape, dtype=np.float64) for x in range(3)]
     i = 0
     index_edge = np.where((border_mask > 0) )
@@ -142,11 +144,7 @@ def deform_image(input_path, dim=2, border=33, max_deform=40, n_p=100, sigma_b=3
     # Read the image
     input_image = sitk.ReadImage(input_path)
     # Get the values..
-    temp_value = sitk.GetArrayFromImage(input_image)
-    temp_value = temp_value[0, :, :]
-
-    # No idea how to handle the multi dimensional thing...
-    temp_value = np.reshape(temp_value, temp_value.shape + tuple({1}))
+    temp_value = sitk.GetArrayFromImage(input_image).transpose()
     temp_shape = temp_value.shape
 
     # Here we create a DVF and DVFb....
@@ -177,21 +175,21 @@ def write_images(input_path, dvfb, sigma_n=5):
 
     temp_orig = input_image.GetOrigin()
 
-    sitk_dvfb = sitk.GetImageFromArray(dvfb, isVector=True)
+    sitk_dvfb = sitk.GetImageFromArray(np.stack(dvfb, axis=3), isVector=True)
     # Not sure what this exactly does
     sitk_dvfb.SetOrigin(temp_orig)
 
     # Write image...
-    sitk.WriteImage(sitk.Cast(sitk_dvfb, sitk.sitkVectorFloat32), file_dvf)
+    # sitk.WriteImage(sitk.Cast(sitk_dvfb, sitk.sitkVectorFloat32), file_dvf)
 
     # ! After this line you cannot save DeformedDVF any more
-    dvf_t = sitk.DisplacementFieldTransform(np.array(sitk_dvfb))
-
-
+    dvf_t = sitk.DisplacementFieldTransform(sitk_dvfb)
 
     # This is the clean version of the deformed image. Intensity noise should be added to this image
     deformed_image = sitk.Resample(input_image, dvf_t)
     deformed_image = sitk.AdditiveGaussianNoise(deformed_image, sigma_n, 0, 0)
-    deformed_image = sitk.GetArrayFromImage(deformed_image)
+
     sitk.WriteImage(sitk.Cast(deformed_image, sitk.sitkInt16), file_mvd)
+    sitk.WriteImage(deformed_image, file_mvd)
+
 
