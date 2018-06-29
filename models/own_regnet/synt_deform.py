@@ -10,6 +10,7 @@ from scipy.ndimage.filters import gaussian_filter
 import submodules.RegNet.Functions.PyFunctions as PF
 
 from settings.config import *
+from tempfile import TemporaryFile
 
 
 def create_dvf(input_shape, dim, border, max_deform, n_p):
@@ -158,32 +159,30 @@ def deform_image(input_path, dim=2, border=33, max_deform=40, n_p=100, sigma_b=3
     return dvfb
 
 
-def write_images(input_path, dvfb, sigma_n=5):
+def write_image(input_path, dvfb, sigma_n=5):
     """
     We create a separate function to handle all the writing...
 
     :return:
     """
     input_image = sitk.ReadImage(input_path)
-
-    idx = re.findall('(ProstateX-[0-9]{4})', input_path)[0]
     id_seriex = re.findall('([0-9]{6})\.dcm', input_path)[0]
 
     # File operational stuff...
-    file_dvf = os.path.join(os.path.dirname(input_path), 'DVF' + id_seriex + '.dcm')
+    file_dvf = os.path.join(os.path.dirname(input_path), 'DVF' + id_seriex + '.npy')
     file_mvd = os.path.join(os.path.dirname(input_path), 'MVD' + id_seriex + '.dcm')
 
     temp_orig = input_image.GetOrigin()
-
-    sitk_dvfb = sitk.GetImageFromArray(np.stack(dvfb, axis=3), isVector=True)
-    # Not sure what this exactly does
-    sitk_dvfb.SetOrigin(temp_orig)
-
+    dvfb_stack = np.stack(dvfb, axis=3)
     # Write image...
     # sitk.WriteImage(sitk.Cast(sitk_dvfb, sitk.sitkVectorFloat32), file_dvf)
+    np.save(file_dvf, dvfb_stack)
 
+    sitk_dvfb = sitk.GetImageFromArray(dvfb_stack, isVector=False)
+    sitk_dvfb.SetOrigin(temp_orig)
     # ! After this line you cannot save DeformedDVF any more
     dvf_t = sitk.DisplacementFieldTransform(sitk_dvfb)
+
 
     # This is the clean version of the deformed image. Intensity noise should be added to this image
     deformed_image = sitk.Resample(input_image, dvf_t)

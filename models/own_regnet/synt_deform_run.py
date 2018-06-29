@@ -9,6 +9,8 @@ from settings.config import *
 import models.own_regnet.synt_deform as synt_deform
 import numpy as np
 import importlib
+importlib.reload(synt_deform)
+import SimpleITK as sitk
 
 # TODO Okay, I have now recreated the Synt Deform myself. I need to check whether Im getting the same results with my thing as with theirs..
 
@@ -29,14 +31,5 @@ for i_idx in os.listdir(DIR_IMG):
 
     for i_file in temp_imag_series:
         i_file = temp_imag_series[0]
-        dvfb = synt_deform.deform_image(i_file, dim=2, border=33, max_deform=20, n_p=100, sigma_b=35, id_dvf_area=True, distance_deform=33)
-        synt_deform.write_images(i_file, dvfb)
-
-
-    deformed_image_array = sitk.GetArrayFromImage(sitk.ReadImage(file_mvd))
-    input_image_array = sitk.GetArrayFromImage(sitk.ReadImage(input_path))
-
-    z = (input_image_array - deformed_image_array).transpose()
-    z.shape
-    plt.imshow(z[:,:,0], cmap='gray')
-
+        dvfb = synt_deform.deform_image(i_file, dim=2, border=50, max_deform=30, n_p=30, sigma_b=2, id_dvf_area=True, distance_deform=1)
+        synt_deform.write_image(i_file, dvfb)
